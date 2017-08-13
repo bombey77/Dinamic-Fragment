@@ -7,14 +7,24 @@
     <LinearLayout
         android:id="@+id/lineLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <Button
-            android:onClick="onAdd"
-            android:id="@+id/btnAdd"
-            android:text="Add"
+            android:onClick="onFirst"
+            android:id="@+id/btnFirst"
+            android:text="First"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:onClick="onFirst"
+            android:id="@+id/btnSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second"
+            android:layout_weight="1"/>
     </LinearLayout>
 
     <LinearLayout

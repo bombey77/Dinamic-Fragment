@@ -13,6 +13,8 @@ import android.view.ViewGroup;
 
 public class FragmentTwo extends Fragment {
 
+    protected static final String TAG = "fr2";
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
