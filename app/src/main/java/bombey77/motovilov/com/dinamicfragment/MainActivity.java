@@ -4,12 +4,9 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-
-    private static final String LOG = "myLogs";
 
     private FragmentManager fragmentManager;
     private FragmentTransaction fragmentTransaction;
@@ -21,10 +18,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        fragmentManager = getSupportFragmentManager();
 
         fragmentOne = new FragmentOne();
         fragmentTwo = new FragmentTwo();
+
+        fragmentManager = getSupportFragmentManager();
     }
 
     public void onFirst(final View view) {
@@ -46,5 +44,6 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
         }
+
     }
 }
