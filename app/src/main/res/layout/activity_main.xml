@@ -11,7 +11,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:onClick="onFirst"
+            android:onClick="onClick"
             android:id="@+id/btnFirst"
             android:text="First"
             android:layout_width="wrap_content"
@@ -19,7 +19,7 @@
             android:layout_weight="1"/>
 
         <Button
-            android:onClick="onFirst"
+            android:onClick="onClick"
             android:id="@+id/btnSecond"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -28,7 +28,39 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_below="@+id/lineLayout"
+        android:id="@+id/lineLayoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/lineLayout">
+
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/btnRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove"
+            android:layout_weight="1"/>
+
+
+        <Button
+            android:layout_below="@+id/lineLayoutBtn"
+            android:onClick="onClick"
+            android:id="@+id/btnReplace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Replace"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+    <Switch
+        android:id="@+id/switchIsBackStack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IsBackStack" />
+
+    <LinearLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
